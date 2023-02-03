@@ -250,8 +250,3 @@ class GuiCtk(customtkinter.CTk):
         self.g4 = PhotoImage(file=f"./cards/{g_card_4}").subsample(4, 4)
         card_canvas.create_image(70, 110, image=self.g4)
         card_canvas.grid(column=3, row=2, sticky="nsew")
-
-
-if __name__ == "__main__":
-    app = GuiCtk()
-    app.mainloop()
